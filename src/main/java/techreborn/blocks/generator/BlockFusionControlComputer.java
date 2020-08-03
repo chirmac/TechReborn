@@ -82,6 +82,8 @@ public class BlockFusionControlComputer extends BlockMachineBase {
 		return GuiType.FUSION_CONTROLLER;
 	}
 
+
+
 	@Override
 	public void onSteppedOn(final World worldIn, final BlockPos pos, final Entity entityIn) {
 		super.onSteppedOn(worldIn, pos, entityIn);

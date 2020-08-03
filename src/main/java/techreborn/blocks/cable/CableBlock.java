@@ -102,20 +102,18 @@ public class CableBlock extends BlockWithEntity implements Waterloggable {
 
 	public BooleanProperty getProperty(Direction facing) {
 		switch (facing) {
-		case EAST:
-			return EAST;
-		case WEST:
-			return WEST;
-		case NORTH:
-			return NORTH;
-		case SOUTH:
-			return SOUTH;
-		case UP:
-			return UP;
-		case DOWN:
-			return DOWN;
-		default:
-			return EAST;
+			case WEST:
+				return WEST;
+			case NORTH:
+				return NORTH;
+			case SOUTH:
+				return SOUTH;
+			case UP:
+				return UP;
+			case DOWN:
+				return DOWN;
+			default:
+				return EAST;
 		}
 	}
 
@@ -201,7 +199,7 @@ public class CableBlock extends BlockWithEntity implements Waterloggable {
 
 	@Override
 	public BlockState getStateForNeighborUpdate(BlockState ourState, Direction ourFacing, BlockState otherState,
-			WorldAccess worldIn, BlockPos ourPos, BlockPos otherPos) {
+												WorldAccess worldIn, BlockPos ourPos, BlockPos otherPos) {
 		if (ourState.get(WATERLOGGED)) {
 			worldIn.getFluidTickScheduler().schedule(ourPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
 		}

@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "power": 4,
+  "time": 270,
+  "ingredients" : [
+    {
+      "item": "techreborn:uranium_ore"
+    }
+  ],
+  "results" : [
+    {
+      "item": "techreborn:uranium_dust",
+	  "count": 1
+    }
+  ]
+}

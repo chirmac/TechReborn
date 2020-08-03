@@ -158,6 +158,9 @@ public class WorldGenerator {
 			if (TechRebornConfig.enableTinOre) {
 				addOre(biome, OreFeatureConfig.Target.NATURAL_STONE, TRContent.Ores.TIN);
 			}
+			if(TechRebornConfig.enableUraniumOre) {
+				addOre(biome, OreFeatureConfig.Target.NATURAL_STONE, TRContent.Ores.URANIUM);
+			}
 
 			if (biome.getCategory() == Category.FOREST || biome.getCategory() == Category.TAIGA || biome.getCategory() == Category.SWAMP) {
 				biome.addFeature(GenerationStep.Feature.VEGETAL_DECORATION,

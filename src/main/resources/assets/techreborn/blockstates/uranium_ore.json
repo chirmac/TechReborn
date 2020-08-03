@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "techreborn:block/ore/uranium_ore" }
+    }
+}

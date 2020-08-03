@@ -71,6 +71,7 @@ public enum ModFluids {
 	SULFURIC_ACID,
 	TRITIUM,
 	WOLFRAMIUM,
+	STEAM,
 	BIOFUEL;
 
 	private RebornFluid stillFluid;

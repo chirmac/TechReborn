@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:centrifuge",
+  "power": 7,
+  "time": 2400,
+  "ingredients": [
+    {
+      "count": 2,
+      "item": "techreborn:uranium_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "techreborn:enriched_uranium"
+    }
+  ]
+}

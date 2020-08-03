@@ -55,10 +55,7 @@ import techreborn.blockentity.storage.energy.AdjustableSUBlockEntity;
 import techreborn.blocks.DataDrivenMachineBlock;
 import techreborn.blocks.GenericMachineBlock;
 import techreborn.blocks.cable.CableBlock;
-import techreborn.blocks.generator.BlockFusionCoil;
-import techreborn.blocks.generator.BlockFusionControlComputer;
-import techreborn.blocks.generator.BlockSolarPanel;
-import techreborn.blocks.generator.GenericGeneratorBlock;
+import techreborn.blocks.generator.*;
 import techreborn.blocks.lighting.BlockLamp;
 import techreborn.blocks.machine.tier0.IronAlloyFurnaceBlock;
 import techreborn.blocks.machine.tier0.IronFurnaceBlock;
@@ -385,6 +382,7 @@ public class TRContent {
 		SODALITE(TechRebornConfig.sodaliteVeinSize, TechRebornConfig.sodaliteVeinCount, 10, 250, MiningLevel.DIAMOND),
 		SPHALERITE(TechRebornConfig.sphaleriteVeinSize, TechRebornConfig.sphaleriteVeinCount, 10, 126, MiningLevel.IRON),
 		TIN(TechRebornConfig.tinVeinSize, TechRebornConfig.tinVeinCount, 20, 60, MiningLevel.STONE),
+		URANIUM(TechRebornConfig.uraniumVeinSize, TechRebornConfig.uraniumVeinCount, 10, 30, MiningLevel.DIAMOND),
 		TUNGSTEN(TechRebornConfig.tungstenVeinSize, TechRebornConfig.tungstenVeinCount, 10, 250, MiningLevel.DIAMOND);
 
 		public final String name;
@@ -524,6 +522,7 @@ public class TRContent {
 		DRAGON_EGG_SYPHON(new GenericGeneratorBlock(null, DragonEggSyphonBlockEntity::new)),
 		FUSION_COIL(new BlockFusionCoil()),
 		FUSION_CONTROL_COMPUTER(new BlockFusionControlComputer()),
+		FISSION_CONTROL_COMPUTER(new BlockFissionControlComputer()),
 		GAS_TURBINE(new GenericGeneratorBlock(GuiType.GAS_TURBINE, GasTurbineBlockEntity::new)),
 		LIGHTNING_ROD(new GenericGeneratorBlock(null, LightningRodBlockEntity::new)),
 		PLASMA_GENERATOR(new GenericGeneratorBlock(GuiType.PLASMA_GENERATOR, PlasmaGeneratorBlockEntity::new)),
@@ -578,7 +577,7 @@ public class TRContent {
 		CINNABAR, CLAY, COAL, COPPER, DARK_ASHES, DIAMOND, DIORITE, ELECTRUM, EMERALD, ENDER_EYE, ENDER_PEARL, ENDSTONE,
 		FLINT, GALENA, GOLD, GRANITE, GROSSULAR, INVAR, IRON, LAZURITE, LEAD, MAGNESIUM, MANGANESE, MARBLE, NETHERRACK,
 		NICKEL, OBSIDIAN, OLIVINE, PERIDOT, PHOSPHOROUS, PLATINUM, PYRITE, PYROPE, QUARTZ, RED_GARNET, RUBY, SALTPETER,
-		SAPPHIRE, SAW, SILVER, SODALITE, SPESSARTINE, SPHALERITE, STEEL, SULFUR, TIN, TITANIUM, TUNGSTEN, UVAROVITE,
+		SAPPHIRE, SAW, SILVER, SODALITE, SPESSARTINE, SPHALERITE, STEEL, SULFUR, TIN, TITANIUM, URANIUM, TUNGSTEN, UVAROVITE,
 		YELLOW_GARNET, ZINC;
 
 		public final String name;
@@ -757,6 +756,10 @@ public class TRContent {
 		NAK_COOLANT_CELL_180K,
 		NAK_COOLANT_CELL_360K,
 
+		ENRICHED_URANIUM,
+		EMPTY_FUEL_CELL,
+		ENRICHED_URANIUM_FUEL_CELL,
+
 		RUBBER,
 		SAP,
 		SCRAP,
@@ -792,7 +795,7 @@ public class TRContent {
 	public enum Plates implements ItemConvertible {
 		ADVANCED_ALLOY, ALUMINUM, BRASS, BRONZE, CARBON, CHROME, COAL, COPPER, DIAMOND, ELECTRUM, EMERALD, GOLD, INVAR,
 		IRIDIUM_ALLOY, IRIDIUM, IRON, LAPIS, LAZURITE, LEAD, MAGNALIUM, NICKEL, OBSIDIAN, PERIDOT, PLATINUM, QUARTZ, RED_GARNET,
-		REDSTONE, REFINED_IRON, RUBY, SAPPHIRE, SILICON, SILVER, STEEL, TIN, TITANIUM, TUNGSTEN, TUNGSTENSTEEL, WOOD,
+		REDSTONE, REFINED_IRON, RUBY, SAPPHIRE, SILICON, SILVER, STEEL, TIN, TITANIUM, TUNGSTEN, TUNGSTENSTEEL, URANIUM, WOOD,
 		YELLOW_GARNET, ZINC;
 
 		public final String name;

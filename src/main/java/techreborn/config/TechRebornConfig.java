@@ -737,6 +737,15 @@ public class TechRebornConfig {
 	@Config(config = "world", category = "ore", key = "tungstenVeinSize", comment = "Amount of Tungsten Ores per vein.")
 	public static int tungstenVeinSize = 6;
 
+	@Config(config = "world", category = "ore", key = "enableUraniumOre", comment = "Generate Uranium Ore in The End.")
+	public static boolean enableUraniumOre = true;
+
+	@Config(config = "world", category = "ore", key = "uraniumVeinCount", comment = "Count of Uranium Ore veins per chunk.")
+	public static int uraniumVeinCount = 2;
+
+	@Config(config = "world", category = "ore", key = "uraniumVeinSize", comment = "Amount of Uranium Ores per vein.")
+	public static int uraniumVeinSize = 4;
+
 	@Config(config = "world", category = "rubber_tree", key = "rubberTreeChance", comment = "Chance to spawn rubber tree")
 	public static int rubberTreeChance = 50;
 
