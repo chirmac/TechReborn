@@ -108,7 +108,7 @@ public class TRContent {
 
 	// Armor
 	public static Item CLOAKING_DEVICE;
-	public static Item LAPOTRONIC_ORBPACK;
+	public static Item LAPTRONIC_ORBPACK;
 	public static Item LITHIUM_ION_BATPACK;
 
 	// Battery
