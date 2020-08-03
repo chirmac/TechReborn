@@ -113,7 +113,7 @@ public class TRContent {
 
 	// Battery
 	public static Item ENERGY_CRYSTAL;
-	public static Item LAPOTRON_CRYSTAL;
+	public static Item LAPTRON_CRYSTAL;
 	public static Item LAPOTRONIC_ORB;
 	public static Item LITHIUM_ION_BATTERY;
 	public static Item RED_CELL_BATTERY;
